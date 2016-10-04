@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    $('#menu ul').hide();
-    $('#menu ul').children('.current').parent().show();
-
     $('#menu li a').click(function () {
         var checkElement = $(this).next();
         //if (checkElement.is('ul') && checkElement.is(':visible')) {
@@ -29,6 +26,5 @@ $(document).ready(function() {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled-2");
         $(this).toggleClass("toggle-button");
-        //$('#menu ul').hide();
     });
 });
