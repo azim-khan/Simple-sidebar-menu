@@ -1,0 +1,119 @@
+﻿*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "PT Sans";
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.42857;
+    margin: 0;
+}
+
+.breadcrumb-container {
+    background-color: #dee3f6;
+    line-height: 50px;
+    padding: 0;
+}
+
+.my-breadcrumb {
+    font-size: 13px;
+    font-weight: bold;
+    list-style: outside none none;
+    margin: 0;
+    padding-left: 25px;
+}
+
+.my-breadcrumb > li {
+    display: inline-block;
+}
+
+.my-breadcrumb > li + li::before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    font-size: 16px;
+    padding: 0 10px;
+    position: relative;
+    top: 1px;
+}
+
+.my-breadcrumb a {
+    color: #000;
+    text-decoration: none;
+}
+
+.my-breadcrumb > .active {
+    color: #646464;
+}
+
+.right-box {
+    line-height: 30px;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+
+.right-box-inner {
+    background-color: #ffffff;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.log-out {
+    background: linear-gradient(to bottom, #5c6574 0,#313947 100%);
+    display: inline-block;
+    padding: 0 7px;
+}
+
+.off-button, .off-button:hover, .off-button:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.welcome {
+    display: inline-block;
+    font-size: 11px;
+    width: 90px;
+}
+
+    .welcome > span {
+        position: absolute;
+        top: -6px;
+    }
+
+    .welcome > strong {
+        bottom: -6px;
+        position: absolute;
+    }
+
+.settings, .settings:hover, .settings:focus {
+    color: #A8A7A2;
+    padding-right: 5px;
+    text-decoration: none;
+    outline: none;
+}
+
+.user-icon {
+    border: 1px solid #a8a7a2;
+    border-radius: 50%;
+    color: #a8a7a2;
+    display: inline-block;
+    line-height: 22px;
+    text-align: center;
+    width: 23px;
+}
+
+.down-arrow, .down-arrow:hover, .down-arrow:focus {
+    border-left: 1px solid #e1e1e1;
+    color: #a8a7a2;
+    display: inline-block;
+    padding: 0 10px;
+    outline: none;
+}
