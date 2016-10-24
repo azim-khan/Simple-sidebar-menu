@@ -11,22 +11,23 @@
     <link href="Content/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="Content/css/font.css" rel="stylesheet">
     <link href="Content/css/sidebar.css" rel="stylesheet">
-    <link href="Content/css/Global.css" rel="stylesheet">
+    <link href="Content/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
 <div id="wrapper">
-    <!-- Sidebar -->
     <div id="menu-toggle-2">
         <div></div>
     </div>
 
+    <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <div class="left-back"></div>
+    
         <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
             <li class="logo">
-                <img class="brand-logo" src="Content/images/logo.png" alt="logo" />
+                <img class="brand-logo" src="Content/images/logo.png" alt="logo"/>
                 <span class="brand-name">SIMPLE SIDEBAR</span>
             </li>
             <li>
@@ -70,9 +71,28 @@
             <li>
                 <a href="#">
                     <span class="menu-icon"><i class="fa fa-book fa-lg"></i></span>
-                    <span class="menu-label">REPORTING</span>
+                    <span class="menu-label">REPORTING <i class="fa fa-angle-down down-up"></i></span>
                 </a>
-            </li>
+                <ul class="nav-pills nav-stacked nested-menu">
+                    <li>
+                        <a href="#">
+                            <span class="sub-menu-icon"><i class="fa fa-file-text-o fa-lg"></i></span>
+                            <span class="sub-menu-label">WEEKLY REPORT</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <span class="sub-menu-icon"><i class="fa fa-file-word-o fa-lg"></i></span>
+                            <span class="sub-menu-label">MONTHLY REPORT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="sub-menu-icon"><i class="fa fa-file-pdf-o fa-lg"></i></span>
+                            <span class="sub-menu-label">YEARLY REPORT</span>
+                        </a>
+                    </li>
+                </ul></li>
             <li class="active">
                 <a href="#">
                     <span class="menu-icon"><i class="fa fa-bolt fa-lg"></i></span>

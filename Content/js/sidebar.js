@@ -12,7 +12,10 @@ $(document).ready(function() {
 
         if (checkElement.is('ul')) {
             $(this).find('.down-up').toggleClass('fa-angle-down fa-angle-up');
-            checkElement.slideToggle();
+            checkElement.slideToggle(function() {
+                $(this).toggleClass('open');
+                $(this).removeAttr('style');
+            });
             return false;
         }
     });
@@ -28,3 +31,4 @@ $(document).ready(function() {
         $(this).toggleClass("toggle-button");
     });
 });
+
