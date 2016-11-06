@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#menu li a').click(function () {
+    $('.sidebar-nav li a').click(function () {
         var checkElement = $(this).next();
         //if (checkElement.is('ul') && checkElement.is(':visible')) {
         //    return false;
@@ -18,11 +18,6 @@ $(document).ready(function() {
             });
             return false;
         }
-    });
-    
-    $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
     });
 
     $("#menu-toggle-2").click(function (e) {
